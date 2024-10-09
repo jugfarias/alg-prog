@@ -19,13 +19,29 @@ int main(){
     printf("Digite o valor de c: ");
     scanf("%f", &c);
 
-    delta = b*b - 4*a*c;
+    if (a == 0){
+        printf("Nao eh uma equacao do 2o grau.\n");
+        return 0;
+    }else{
+        printf("Equacao do 2o grau: %.2fx^2 + %.2fx + %.2f = 0\n", a, b, c);
+        delta = b*b - 4*a*c;
 
-    x1 = (-1*b + sqrt(delta))/(2*a);
-    x2 = (-1*b - sqrt(delta))/(2*a);
+        if (delta < 0){
+            printf("Nao possui raizes reais.\n");
+            return 0;
+        }else if (delta == 0){
+            x1 = -1*b/(2*a);
+            printf("x = %.2f\n", x1);
+        }else{
+            x1 = (-1*b + sqrt(delta))/(2*a);
+            x2 = (-1*b - sqrt(delta))/(2*a);
 
-    printf("x1 = %.2f\n", x1);
-    printf("x2 = %.2f\n", x2);
+            printf("x1 = %.2f\n", x1);
+            printf("x2 = %.2f\n", x2);
+        }
+
+        
+    }  
 
     return 0;
 }
