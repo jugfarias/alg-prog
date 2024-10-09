@@ -36,5 +36,8 @@ int main() {
 
     printf("O total dos %d livros do tipo %c foi de: R$%4.2f\n", qtd, tipo, total);
 
+    if (qtd > 10)
+        printf("Obrigado! Voce esta comprando mais de 10 livros! :)\n");
+
     return 0;
 }
