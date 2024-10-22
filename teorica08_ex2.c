@@ -14,11 +14,9 @@ int main(){
     scanf("%d", &N);
 
     for (int i = 1; i <= N; i++){
-        if (i == 1){
+        if (i == 1 || i == 2){
             fibN = 1;
-        }else if (i == 2){
-            fibN = 2;
-            fibN1 = 1;       
+            fibN1 = 1;      
         }else{
             fibN2 = fibN1;
             fibN1 = fibN;
@@ -28,6 +26,8 @@ int main(){
         printf("%d ", fibN);
 
     }
+
+    printf("\n");
 
     return 0;
 }
