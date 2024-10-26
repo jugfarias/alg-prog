@@ -7,7 +7,7 @@ A seguir, o programa deve ler um valor e informar qual é o código do tipo de p
 
 #include <stdio.h>
 
-#define TAMVET 10
+#define TAMVET 90
 
 int main(){
 
