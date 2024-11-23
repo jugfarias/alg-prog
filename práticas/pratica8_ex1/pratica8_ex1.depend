@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1732103448 source:c:\users\jubs\documents\estudos\faculdade\algoritmos e programação\alg-prog\práticas\pratica8_ex1\main.c
+	<raylib.h>
+
+1732103039 c:\raylib\raylib\src\raylib.h
+	<stdarg.h>
+	<stdbool.h>
+
